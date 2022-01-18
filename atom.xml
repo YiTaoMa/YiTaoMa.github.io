@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  
+  <subtitle>Welcome to my Blog~</subtitle>
+  <link href="http://yitaoma.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://yitaoma.github.io/"/>
+  <updated>2022-01-18T05:45:28.645Z</updated>
+  <id>http://yitaoma.github.io/</id>
+  
+  <author>
+    <name>Anti-General</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IntelliJ IDEA Tomcat Configuration</title>
+    <link href="http://yitaoma.github.io/2022/01/17/tomcatconfig/"/>
+    <id>http://yitaoma.github.io/2022/01/17/tomcatconfig/</id>
+    <published>2022-01-17T04:55:00.000Z</published>
+    <updated>2022-01-18T05:45:28.645Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Steps&quot;&gt;&lt;a href=&quot;#Steps&quot; class=&quot;headerlink&quot; title=&quot;Steps:&quot;&gt;&lt;/a&gt;Steps:&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;Open IDEA&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol</summary>
+        
+      
+    
+    
+    
+    <category term="Intellij IDEA Configuration" scheme="http://yitaoma.github.io/categories/Intellij-IDEA-Configuration/"/>
+    
+    
+    <category term="Java" scheme="http://yitaoma.github.io/tags/Java/"/>
+    
+    <category term="Intellij IDEA Configuration" scheme="http://yitaoma.github.io/tags/Intellij-IDEA-Configuration/"/>
+    
+    <category term="Tomcat" scheme="http://yitaoma.github.io/tags/Tomcat/"/>
+    
+  </entry>
+  
+</feed>
