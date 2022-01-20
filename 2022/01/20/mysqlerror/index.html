@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="IntelliJ IDEA Tomcat Configuration, null">
-    <meta name="description" content="Detailed steps on how to configure IntelliJ IDEA Tomcat for Mac (with pictures)">
+    <meta name="keywords" content="Some error reporting issues using JDBC link to MySQL, null">
+    <meta name="description" content="Solve some error reports in Java code using JDBC to connect to MySQL">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>IntelliJ IDEA Tomcat Configuration | null</title>
+    <title>Some error reporting issues using JDBC link to MySQL | null</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -259,12 +259,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/tomcatCover.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/mySQLCover.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">IntelliJ IDEA Tomcat Configuration</h1>
+                    <h1 class="description center-align post-title">Some error reporting issues using JDBC link to MySQL</h1>
                 </div>
             </div>
         </div>
@@ -384,12 +384,12 @@
                                 <span class="chip bg-color">Java</span>
                             </a>
                         
-                            <a href="/tags/Intellij-IDEA-Configuration/">
-                                <span class="chip bg-color">Intellij IDEA Configuration</span>
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
                             </a>
                         
-                            <a href="/tags/Tomcat/">
-                                <span class="chip bg-color">Tomcat</span>
+                            <a href="/tags/Error/">
+                                <span class="chip bg-color">Error</span>
                             </a>
                         
                     </div>
@@ -400,8 +400,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Intellij-IDEA-Configuration/" class="post-category">
-                                Intellij IDEA Configuration
+                            <a href="/categories/MySQL/" class="post-category">
+                                MySQL
                             </a>
                         
                     </div>
@@ -413,28 +413,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-01-17
+                    2022-01-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-19
+                    2022-01-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    439
+                    209
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    1 Min
                 </div>
                 
 
@@ -457,84 +457,39 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="English-version-steps"><a href="#English-version-steps" class="headerlink" title="English version steps"></a>English version steps</h1><ol>
-<li>Open IDEA</li>
-</ol>
-<hr>
-<ol start="2">
-<li>Click on the “Edit configuration” option of the current project<br><img src="P1-1.png"></li>
-</ol>
-<hr>
-<ol start="3">
-<li>In the upper left corner “+” find the “Tomcat Server” option, select “local” (local can only be accessed by yourself)<br><img src="P1-2.png"></li>
-</ol>
-<hr>
-<ol start="4">
-<li>Configure “Name” at the top right<br><img src="P1-3.png"></li>
-</ol>
-<hr>
-<ol start="5">
-<li>Application server configuration.<ol>
-<li><a target="_blank" rel="noopener" href="https://tomcat.apache.org/download-90.cgi">https://tomcat.apache.org/download-90.cgi</a>, download the zip from the official website, unzip it to an empty folder of your choice</li>
-<li>Back to IDEA, select the path of apache.tomcat folder you just extracted.<br><img src="P1-4.png"></li>
-</ol>
-</li>
-</ol>
-<hr>
-<ol start="6">
-<li>uncheck “After launch” (optional), JRE select 1.8 (for me will be an error, or the default on the line, mine is 16), port: “HTTP port 8080”, JMX. “port 1099”<br><img src="P1-5.png"></li>
-</ol>
-<hr>
-<ol start="7">
-<li>Click on “Deployment” in the bar above, select “Artifact” from the “+” on the right, then make sure your project ends with this “-web:war exploded” (must end in exploded) click OK, then pull down to “Application context” and change the name: remove the “_war_exploaded” delete (optional, here for convenience), and then click OK.<br><img src="P1-6-1.png"><br><img src="P1-6-2.png"><br><img src="P1-6-3.png"></li>
-</ol>
-<hr>
+                <h1 id="English-version-steps"><a href="#English-version-steps" class="headerlink" title="English version steps"></a>English version steps</h1><ul>
+<li><strong>Encounter an error:</strong></li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span></span>SQLException</span><span class="token operator">:</span> <span class="token class-name">Unknown</span> initial character set index ‘<span class="token number">255</span>‘ received from server<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  <strong>You need to add after the database name of the URL you specify for MySQL:</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token operator">?</span>useUnicode<span class="token operator">=</span><span class="token boolean">true</span><span class="token operator">&amp;</span>amp<span class="token punctuation">;</span>characterEncoding<span class="token operator">=</span>utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  <strong>which is:</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">jdbc<span class="token operator">:</span>mysql<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">3306</span><span class="token operator">/</span><span class="token class-name">YourDatabaseName</span><span class="token operator">?</span>useUnicode<span class="token operator">=</span><span class="token boolean">true</span><span class="token operator">&amp;</span>amp<span class="token punctuation">;</span>characterEncoding<span class="token operator">=</span>utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p> <strong>where:</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token operator">&amp;</span>amp<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  <strong>is the way it is written in XML, because XML cannot parse “&amp;”</strong></p>
 <ul>
-<li>If you visit the port <a target="_blank" rel="noopener" href="http://localhost:8080/YourProjectName_war_exploded/">http://localhost:8080/YourProjectName_war_exploded/</a><ul>
-<li>where “/YourProjectName_war_exploded/ “ (after “<a href="http://localhost:8080&quot;">http://localhost:8080"</a>)<br>You can find it in the “application context” in the “deployment” section of the tomcat configuration</li>
+<li><strong>When you use an external property file, you need to remove the “amp;”, which means you can write “&amp;” directly:</strong></li>
 </ul>
-</li>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">jdbc<span class="token operator">:</span>mysql<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">3306</span><span class="token operator">/</span><span class="token class-name">YourDatabaseName</span><span class="token operator">?</span>useUnicode<span class="token operator">=</span><span class="token boolean">true</span><span class="token operator">&amp;</span>characterEncoding<span class="token operator">=</span>utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h1 id="中文步骤"><a href="#中文步骤" class="headerlink" title="中文步骤"></a>中文步骤</h1><ul>
+<li><strong>遇到报错：</strong></li>
 </ul>
-<hr>
-<h1 id="中文版本步骤"><a href="#中文版本步骤" class="headerlink" title="中文版本步骤"></a>中文版本步骤</h1><p>Tomcat 配置</p>
-<ol>
-<li>打开IDEA</li>
-</ol>
-<hr>
-<ol start="2">
-<li>点击当前项目的“Edit configuration”选项<br><img src="P1-1.png"></li>
-</ol>
-<hr>
-<ol start="3">
-<li>在左上角“+”号 找到“Tomcat Server”选项，选取“local”即可（local只能自己访问）<br><img src="P1-2.png"></li>
-</ol>
-<hr>
-<ol start="4">
-<li>右侧上方配置“Name”<br><img src="P1-3.png"></li>
-</ol>
-<hr>
-<ol start="5">
-<li>Application server的配置：<ol>
-<li><a target="_blank" rel="noopener" href="https://tomcat.apache.org/download-90.cgi">https://tomcat.apache.org/download-90.cgi</a><br>官网下载zip，解压到你自己选取的一个空文件夹</li>
-<li>回到IDEA，选取你刚解压缩后apache.tomcat文件夹的路径。<br><img src="P1-4.png"></li>
-</ol>
-</li>
-</ol>
-<hr>
-<ol start="6">
-<li>取消勾选“After launch”（可选），JRE选取1.8(对我而言会出错，或者默认就行了，我的是16)，端口：“HTTP port 8080”，JMX：“port 1099”<br><img src="P1-5.png"></li>
-</ol>
-<hr>
-<ol start="7">
-<li>上方bar中点击“Deployment”，右边“+”选取“Artifact”，然后确保你的项目以这个结尾“-web:war exploded”（必须是exploded结尾）点击OK，然后拉到下面“Application context”改个名字：把后面的“_war_exploaded”删除（可选，这里为了方便），然后点击OK即可<br><img src="P1-6-1.png"><br><img src="P1-6-2.png"><br><img src="P1-6-3.png"></li>
-</ol>
-<hr>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name"><span class="token namespace">java<span class="token punctuation">.</span>sql<span class="token punctuation">.</span></span>SQLException</span><span class="token operator">:</span> <span class="token class-name">Unknown</span> initial character set index ‘<span class="token number">255</span>‘ received from server<span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  <strong>需要在你指定的MySQL的URL的数据库名后增加：</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token operator">?</span>useUnicode<span class="token operator">=</span><span class="token boolean">true</span><span class="token operator">&amp;</span>amp<span class="token punctuation">;</span>characterEncoding<span class="token operator">=</span>utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  <strong>也就是：</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">jdbc<span class="token operator">:</span>mysql<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">3306</span><span class="token operator">/</span><span class="token class-name">YourDatabaseName</span><span class="token operator">?</span>useUnicode<span class="token operator">=</span><span class="token boolean">true</span><span class="token operator">&amp;</span>amp<span class="token punctuation">;</span>characterEncoding<span class="token operator">=</span>utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p> <strong>其中：</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token operator">&amp;</span>amp<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>  <strong>是XML中的写法，因为XML无法解析“&amp;”</strong></p>
 <ul>
-<li>访问的话 端口 <a target="_blank" rel="noopener" href="http://localhost:8080/YourProjectName_war_exploded/%E3%80%82">http://localhost:8080/YourProjectName_war_exploded/。</a><ul>
-<li>其中 “/YourProjectName_war_exploded/ ” （在“<a href="http://localhost:8080”后面）">http://localhost:8080”后面）</a><br>在配置tomcat地方“deployment”的“application context“中可以找到 </li>
+<li><strong>当你使用外部属性文件时，则需要去除“amp;”也就是直接写“&amp;”即可</strong></li>
 </ul>
-</li>
-</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">jdbc<span class="token operator">:</span>mysql<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">3306</span><span class="token operator">/</span><span class="token class-name">YourDatabaseName</span><span class="token operator">?</span>useUnicode<span class="token operator">=</span><span class="token boolean">true</span><span class="token operator">&amp;</span>characterEncoding<span class="token operator">=</span>utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
             </div>
@@ -561,7 +516,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://YiTaoMa.github.io/2022/01/17/tomcatconfig/">http://YiTaoMa.github.io/2022/01/17/tomcatconfig/</a>
+                    <a href="http://YiTaoMa.github.io/2022/01/20/mysqlerror/">http://YiTaoMa.github.io/2022/01/20/mysqlerror/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -603,12 +558,12 @@
                                     <span class="chip bg-color">Java</span>
                                 </a>
                             
-                                <a href="/tags/Intellij-IDEA-Configuration/">
-                                    <span class="chip bg-color">Intellij IDEA Configuration</span>
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
                                 </a>
                             
-                                <a href="/tags/Tomcat/">
-                                    <span class="chip bg-color">Tomcat</span>
+                                <a href="/tags/Error/">
+                                    <span class="chip bg-color">Error</span>
                                 </a>
                             
                         </div>
@@ -1049,9 +1004,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/01/20/mysqlerror/">
                     <div class="card-image">
@@ -1068,9 +1024,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1083,6 +1039,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1106,7 +1063,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2022/01/17/tomcatconfig/">
@@ -1139,7 +1096,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="contact, null">
+    <meta name="keywords" content="Tag: Error, null">
     <meta name="description" content="Welcome to Anti-Generals Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>contact | null</title>
+    <title>Tag: Error | null</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -255,13 +255,7 @@
 
 </header>
 
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-<link rel="stylesheet" type="text/css" href="/css/barrager.css">
-<script src="/libs/valine/av-min.js"></script>
-<script src="/libs/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="/js/jquery.barrager.js"></script>
-
-<div class="bg-cover pd-header about-cover">
+    <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -307,152 +301,109 @@
     </div>
 </div>
 
-<style>
-    #send{
-        margin-bottom: 10px;
-        width: 49%;
-        background-color: #0ba360;
-    }
-    #clear{
-        margin-bottom: 10px;
-        width: 49%;
-        background-color: #e7c65c;
-    }
-    p{
-        text-align: center;
-    }
-</style>
 <main class="content">
-    <div id="contact" class="container chip-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <i class="fas fa-comments"></i>&nbsp;&nbsp;Contact
-                </div>
+
+    
+
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;Post Tags
+            </div>
+            <div class="tag-chips">
+                
+                
+                <a href="/tags/Java/" title="Java: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Java" style="background-color: #F9EBEA;">Java
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Intellij-IDEA-Configuration/" title="Intellij IDEA Configuration: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Intellij IDEA Configuration" style="background-color: #F5EEF8;">Intellij IDEA Configuration
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Tomcat/" title="Tomcat: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Tomcat" style="background-color: #D5F5E3;">Tomcat
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/MySQL/" title="MySQL: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="MySQL" style="background-color: #E8F8F5;">MySQL
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Error/" title="Error: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="Error" style="background-color: #FEF9E7;">Error
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
-            <!--valine评论弹幕-->
-            
-                <p>
-                    <b>Speak up!</b><br>
-                    <b>You can leave your footprint here, welcome to leave your message below, welcome to exchange friend chain</b><br>
-                    <b>Blog Name: Anti-General's Blog</b><br>
-                    <b>Blog URL: http://YiTaoMa.github.io</b><br>
-                    <b>Did you know ~ ^_^:</b><br>
-                    <b>Low EQ: LSP</b><br>
-                    <b>High EQ: desire for life</b><br>
-                </p>
-                <div class="container">
-                    <section id="custom" class="bb-section">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <form class="form-inline">
-                                    <div class="form-group">
-                                        Text：<input class="form-control" name="info" type="text" placeholder="hello, world"/>
-                                    </div>
-                                    <div class="form-group">
-                                        Link：<input class="form-control" name="href" type="text" placeholder="https://YiTaoMa.github.io"/>
-                                    </div>
-                                    <div class="form-group">
-                                        Speed：<input  class="form-control"  name="speed" type="text" placeholder="5~20" value="16" />
-                                    </div>
-                                </form>
-                                <div class="form-group">
-                                    <button id="send"  class="btn" onclick="run()">Submit</button>
-                                    <button id="clear" class="btn " onclick="clear_barrage()">clear</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <script type="text/javascript">
-                    AV.init({
-                        appId: 'GQp2XrcE5wGymw3YbJRpg7Oj-MdYXbMMI',
-                        appKey: 'MDzIpC6DdN2lFfpcvU0jefYu'
-                    });
-
-                    $(function() {
-                        do_barrager();
-                        async function do_barrager() {
-                            let lists = [];
-                            //查询弹幕
-                            const query = new AV.Query('barrager');
-                            const barrager = await query.find().then((barrager) => {
-                                lists = barrager;
-                            })
-                            let length = lists.length;
-                            let index = 0;
-                            const timer = setInterval(() => {
-                                if (index === length) {
-                                    clearInterval(timer);
-                                    do_barrager()
-                                } else {
-                                    let obj = lists[index]
-                                    let jsonObject = eval('(' + JSON.stringify(obj) + ')');
-                                    $('body').barrager({
-                                        'img': '/medias/barrager/' + Math.floor(Math.random() * 3) + ".png",
-                                        'href': jsonObject.href,
-                                        'info': jsonObject.info,
-                                        'speed': jsonObject.speed
-                                    });
-                                    index++;
-                                }
-                            }, 500)
-                        }
-                    });
-
-                    //发送弹幕
-                    function  run(){
-                        let info = $('input[name=info]').val();
-                        (info === '' ) ?  info='hello world' : info=info;
-                        let href = $('input[name=href]').val();
-                        (href === '' ) ?  href='https://github.com/blinkfox/hexo-theme-matery' : href=href;
-                        let speed = parseInt($('input[name=speed]').val());
-                        if(speed > 20 || speed < 5)
-                            speed = Math.floor(Math.random() * 10) + 5;
-                        const Barrager = AV.Object.extend('barrager');
-                        const barrager = new Barrager();
-                        barrager.set('href', href);
-                        barrager.set('info', info);
-                        barrager.set('speed', speed);
-                        barrager.save().then((todo) => {
-                            $(" input[ name='info' ] ").val("")
-                            $(" input[ name='href' ] ").val("")
-                            $(" input[ name='speed' ] ").val("")
-                        });
-                    }
-
-                    function  clear_barrage()
-                    {
-                        $.fn.barrager.removeAll();
-                    }
-
-                </script>
-            
-        </div>
-
-        <!--其他评论card-->
-        <div class="card">
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
         </div>
     </div>
+</div>
+
+    
+
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="Java, MySQL, Error" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2022/01/20/mysqlerror/">
+                        <div class="card-image tag-image">
+                            
+                            <img src="/images/mySQLCover.jpg" class="responsive-img" alt="Some error reporting issues using JDBC link to MySQL">
+                            
+                            <span class="card-title">Some error reporting issues using JDBC link to MySQL</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/MySQL/" class="post-category">
+                                MySQL
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
