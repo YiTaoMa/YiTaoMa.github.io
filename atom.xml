@@ -6,7 +6,7 @@
   <link href="http://yitaoma.github.io/atom.xml" rel="self"/>
   
   <link href="http://yitaoma.github.io/"/>
-  <updated>2022-01-20T09:37:17.200Z</updated>
+  <updated>2022-01-30T04:13:25.634Z</updated>
   <id>http://yitaoma.github.io/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Local access to PHP files and databases</title>
+    <link href="http://yitaoma.github.io/2022/01/30/phplocalhost/"/>
+    <id>http://yitaoma.github.io/2022/01/30/phplocalhost/</id>
+    <published>2022-01-30T02:30:17.000Z</published>
+    <updated>2022-01-30T04:13:25.634Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;English-version-steps&quot;&gt;&lt;a href=&quot;#English-version-steps&quot; class=&quot;headerlink&quot; title=&quot;English version steps&quot;&gt;&lt;/a&gt;English version</summary>
+        
+      
+    
+    
+    
+    <category term="PHP" scheme="http://yitaoma.github.io/categories/PHP/"/>
+    
+    
+    <category term="MySQL" scheme="http://yitaoma.github.io/tags/MySQL/"/>
+    
+    <category term="PHP" scheme="http://yitaoma.github.io/tags/PHP/"/>
+    
+    <category term="phpMyAdmin" scheme="http://yitaoma.github.io/tags/phpMyAdmin/"/>
+    
+    <category term="Configuration" scheme="http://yitaoma.github.io/tags/Configuration/"/>
+    
+    <category term="LocalHost" scheme="http://yitaoma.github.io/tags/LocalHost/"/>
+    
+    <category term="PHP LocalHost Configuration" scheme="http://yitaoma.github.io/tags/PHP-LocalHost-Configuration/"/>
+    
+  </entry>
   
   <entry>
     <title>Some error reporting issues using JDBC link to MySQL</title>
@@ -50,7 +85,7 @@
     <link href="http://yitaoma.github.io/2022/01/17/tomcatconfig/"/>
     <id>http://yitaoma.github.io/2022/01/17/tomcatconfig/</id>
     <published>2022-01-17T04:55:00.000Z</published>
-    <updated>2022-01-19T01:48:22.823Z</updated>
+    <updated>2022-01-30T02:35:55.829Z</updated>
     
     
       
@@ -67,6 +102,10 @@
     
     
     <category term="Java" scheme="http://yitaoma.github.io/tags/Java/"/>
+    
+    <category term="Configuration" scheme="http://yitaoma.github.io/tags/Configuration/"/>
+    
+    <category term="LocalHost" scheme="http://yitaoma.github.io/tags/LocalHost/"/>
     
     <category term="Intellij IDEA Configuration" scheme="http://yitaoma.github.io/tags/Intellij-IDEA-Configuration/"/>
     
