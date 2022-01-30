@@ -30,9 +30,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 6.0.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -497,23 +497,28 @@
 </ul>
 <hr>
 <ol>
-<li>First check if you have a database connection, remember the previous webStart page, scroll down the page, find MySQL, does it show “You can administer your MySQL databases with phpMyAdmin”, if it does, you can access your database by clicking phpMyAdmin directly.<br><img src="startPageAdmin.png"><ol>
+<li>First check if you have a database connection, remember the previous webStart page, scroll down the page, find MySQL, does it show “You can administer your MySQL databases with phpMyAdmin”, if it does, you can access your database by clicking phpMyAdmin directly.<br><img src="startPageAdmin.png"></li>
+</ol>
+<ul>
+<li>If it doesn’t, then do the following checks:<ol>
 <li>Go to /Applications/MAMP/bin/phpMyAdmin/config.inc.php and check if the port, username, and password in the configuration file are the same as your MAMP configuration, noting that if you have not configured the MySQl password before then the default is: username: root, password: root. I recommend changing it to your own password.<br><img src="phpAdminConf.png"></li>
-<li>The most convenient way to do this is to<ol>
+</ol>
+</li>
+</ul>
+<ol start="2">
+<li>The most convenient way to do this is to:<ol>
 <li>Enter the following command in the terminal.<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">/Applications/MAMP/Library/bin/mysqladmin -u root -p password<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li>Follow the prompts and enter the original password, then the new password, and finally confirm the new password to succeed. The following warning may appear, but it will not affect the password change.<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Warning: Since password will be sent to server <span class="token keyword">in</span> plain text, use ssl connection to ensure password safety.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <img src="mysqlPassW.png"></li>
-<li>Go to the MAMP configuration file and change the MySQL password by opening /Applications/MAMP/bin/phpMyAdmin/config.inc.php. Find line 87 or so and change it to the password you just changed.<br><img src="phpAdminConfAct.png"></li>
+<li>Go to the MAMP configuration file and change the MySQL password by opening /Applications/MAMP/bin/phpMyAdmin/config.inc.php<br>Find line 87 or so and change it to the password you just changed.<br><img src="phpAdminConfAct.png"></li>
 <li>After these two steps, you have correctly changed the mysql password for MAMP, the integrated PHP environment for Mac.</li>
 <li>Restart the server, and you should see that phpMyAdmin is successfully connected when you enter the WebStart page, click it to enter.</li>
+</ol>
+</li>
 </ol>
 <ul>
 <li>Note: The port of phpMyAdmin is the port of MySQL configured in your MAMP: 8889. The code in your PHP code to connect to the database should be the same as the code provided in the MySQL page under its WebStart page.<br><img src="exampleCode.png"></li>
 </ul>
-</li>
-</ol>
-</li>
-</ol>
 <h1 id="中文版本步骤"><a href="#中文版本步骤" class="headerlink" title="中文版本步骤"></a>中文版本步骤</h1><h4 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h4><ol>
 <li>首先，官网下载MAMP： <a target="_blank" rel="noopener" href="https://www.mamp.info/en/downloads/">https://www.mamp.info/en/downloads/</a></li>
 </ol>
@@ -542,23 +547,28 @@
 </ul>
 <hr>
 <ol>
-<li>首先查看是否有连接到数据库，记得之前的webStart页面吗，页面往下拉，找到MySQL，是否显示“You can administer your MySQL databases with phpMyAdmin”，如果有的话，直接点击phpMyAdmin就可以访问你的数据库了，如果说连接失败则进行如下检查：<br><img src="startPageAdmin.png"><ol>
+<li>首先查看是否有连接到数据库，记得之前的webStart页面吗，页面往下拉，找到MySQL，是否显示“You can administer your MySQL databases with phpMyAdmin”，如果有的话，直接点击phpMyAdmin就可以访问你的数据库了。<br><img src="startPageAdmin.png"></li>
+</ol>
+<ul>
+<li>如果说连接失败则进行如下检查：<ol>
 <li>去到/Applications/MAMP/bin/phpMyAdmin/config.inc.php地址检查配置文件中的端口，用户名，密码是否和你MAMP配置的相同，其中要注意的是 如果之前没有配置过MySQl密码那么默认的是：用户名：root，密码：root。建议更改成你自己的密码。<br><img src="phpAdminConf.png"></li>
+</ol>
+</li>
+</ul>
+<ol start="2">
 <li>最方便的做法是：<ol>
 <li>终端输入以下命令：<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">/Applications/MAMP/Library/bin/mysqladmin -u root -p password<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li>按提示执行，先输入原密码，再输入新密码，最后确认新密码，即可成功。 可能会出现下面警告，但不影响密码更改。<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Warning: Since password will be sent to server <span class="token keyword">in</span> plain text, use ssl connection to ensure password safety.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <img src="mysqlPassW.png"></li>
-<li>进入MAMP配置文件修改MySQL密码，打开 /Applications/MAMP/bin/phpMyAdmin/config.inc.php。找到87行左右，修改成你刚才进行过修改的密码。<br><img src="phpAdminConfAct.png"></li>
+<li>进入MAMP配置文件修改MySQL密码，打开<br>/Applications/MAMP/bin/phpMyAdmin/config.inc.php<br>找到87行左右，修改成你刚才进行过修改的密码。<br><img src="phpAdminConfAct.png"></li>
 <li>经过这两个步骤，就正确修改了Mac下PHP集成环境MAMP的mysql密码。</li>
 <li>重启服务器，进入WebStart页面应该可以看到phpMyAdmin连接成功了，点击即可进入。</li>
+</ol>
+</li>
 </ol>
 <ul>
 <li>Note: phpMyAdmin 的端口就是你MAMP配置的MySQL的端口： 8889。你PHP代码里面的连接数据库的代码最好跟它WebStart页面下的MySQL页面下提供的代码一样。<br><img src="exampleCode.png"></li>
 </ul>
-</li>
-</ol>
-</li>
-</ol>
 
                 
             </div>
