@@ -384,6 +384,10 @@
                                 <span class="chip bg-color">Java</span>
                             </a>
                         
+                            <a href="/tags/Error/">
+                                <span class="chip bg-color">Error</span>
+                            </a>
+                        
                             <a href="/tags/Configuration/">
                                 <span class="chip bg-color">Configuration</span>
                             </a>
@@ -392,12 +396,16 @@
                                 <span class="chip bg-color">LocalHost</span>
                             </a>
                         
-                            <a href="/tags/Intellij-IDEA-Configuration/">
-                                <span class="chip bg-color">Intellij IDEA Configuration</span>
+                            <a href="/tags/Intellij-IDEA/">
+                                <span class="chip bg-color">Intellij IDEA</span>
                             </a>
                         
                             <a href="/tags/Tomcat/">
                                 <span class="chip bg-color">Tomcat</span>
+                            </a>
+                        
+                            <a href="/tags/Tomcat-Configuration/">
+                                <span class="chip bg-color">Tomcat Configuration</span>
                             </a>
                         
                     </div>
@@ -428,21 +436,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-30
+                    2022-02-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    439
+                    874
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    2 Min
+                    4 Min
                 </div>
                 
 
@@ -504,6 +512,36 @@
 </li>
 </ul>
 <hr>
+<h2 id="Potential-problems-and-solutions"><a href="#Potential-problems-and-solutions" class="headerlink" title="Potential problems and solutions"></a>Potential problems and solutions</h2><p><strong>If the JavaWeb project reports an error:</strong><br>  </p><pre class="line-numbers language-java" data-language="java"><code class="language-java">can not resolve symbol<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>That is, you need to configure tomcat.<p></p>
+<ol>
+<li>Create a new Tomcat (here remember not the “TomcatEE”, do not choose the wrong server).</li>
+</ol>
+<hr>
+<ol start="2">
+<li>Configure the “application server” （if you find that it is already configured, click “configure”, （check the content of the “library” below, if it is empty, you need to delete the current configuration and then click “configure” to configure again）.</li>
+</ol>
+<hr>
+<ol start="3">
+<li>After the configuration, “deployment” –&gt; “artifact” (there may not be any options, see the following section for the solution), if it still shows that error, open “project structure” -&gt; “modules” -&gt; “your current module “ -&gt; “dependencies” -&gt; “+” -&gt; “Libraries”-&gt;”Application server libraries”-&gt;select Tomcat -&gt; tick the box on the left -&gt; Apply and ok.</li>
+</ol>
+<hr>
+<ol start="4">
+<li>Problem solved.</li>
+</ol>
+<hr>
+<p><strong>If “Deployment”–&gt;”+” in Tomcat configuration does not show the option “Module name:war exploded”:</strong></p>
+<ol>
+<li>Open “Project Structure”–&gt;”Artifacts”–&gt;”+”–&gt;”Web Application: Exploded”–&gt;”From Modules”–&gt;Select it–&gt;Apply and OK.</li>
+</ol>
+<hr>
+<ol start="2">
+<li>Back to the Tomcat configuration, you can now add the Module you want to deploy in “deployment”.</li>
+</ol>
+<hr>
+<ol start="3">
+<li>Problem solved.</li>
+</ol>
+<hr>
 <h1 id="中文版本步骤"><a href="#中文版本步骤" class="headerlink" title="中文版本步骤"></a>中文版本步骤</h1><p>Tomcat 配置</p>
 <ol>
 <li>打开IDEA</li>
@@ -543,6 +581,36 @@
 </ul>
 </li>
 </ul>
+<hr>
+<h2 id="潜在问题以及解决方案"><a href="#潜在问题以及解决方案" class="headerlink" title="潜在问题以及解决方案"></a>潜在问题以及解决方案</h2><p><strong>如果JavaWeb项目报错：</strong><br>  </p><pre class="line-numbers language-java" data-language="java"><code class="language-java">can not resolve symbol<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>那就是需要配置tomcat。<p></p>
+<ol>
+<li>新建Tomcat。（这里记住不是那个“TomcatEE”，不要选错了）</li>
+</ol>
+<hr>
+<ol start="2">
+<li>配置“application server”(如果发现已经配置，点击“configure”，检查下下方“library”是否存在内容，如果为空则需要删除当前的配置然后重新点击“configure”配置一遍）。</li>
+</ol>
+<hr>
+<ol start="3">
+<li>配置好后，“deployment”选择 “artifact”（可能会出现没有任何选项的情况，解决方法看下面的部分），如果还是显示那个错误的话，打开 “project structure”—&gt; “modules”—&gt;“你的当前项目”—&gt;“dependencies”—&gt;“+”—&gt;“Libraries”—&gt;“Application server libraries”—&gt;选择Tomcat—&gt;左边打勾—&gt;Apply and ok。</li>
+</ol>
+<hr>
+<ol start="4">
+<li>问题解决。</li>
+</ol>
+<hr>
+<p><strong>如果Tomcat配置中的”Deployment”–&gt;”+”–&gt;不显示选项”Module name:war exploded”：</strong></p>
+<ol>
+<li>打开”Project Structure”–&gt;”Artifacts”–&gt;”+”–&gt;”Web Application: Exploded”–&gt;”From Modules”–&gt;选取即可–&gt;Apply and OK。</li>
+</ol>
+<hr>
+<ol start="2">
+<li>回到Tomcat配置的地方，你就可以在deployment中添加要部署的Module了。</li>
+</ol>
+<hr>
+<ol start="3">
+<li>问题解决。</li>
+</ol>
 
                 
             </div>
@@ -611,6 +679,10 @@
                                     <span class="chip bg-color">Java</span>
                                 </a>
                             
+                                <a href="/tags/Error/">
+                                    <span class="chip bg-color">Error</span>
+                                </a>
+                            
                                 <a href="/tags/Configuration/">
                                     <span class="chip bg-color">Configuration</span>
                                 </a>
@@ -619,12 +691,16 @@
                                     <span class="chip bg-color">LocalHost</span>
                                 </a>
                             
-                                <a href="/tags/Intellij-IDEA-Configuration/">
-                                    <span class="chip bg-color">Intellij IDEA Configuration</span>
+                                <a href="/tags/Intellij-IDEA/">
+                                    <span class="chip bg-color">Intellij IDEA</span>
                                 </a>
                             
                                 <a href="/tags/Tomcat/">
                                     <span class="chip bg-color">Tomcat</span>
+                                </a>
+                            
+                                <a href="/tags/Tomcat-Configuration/">
+                                    <span class="chip bg-color">Tomcat Configuration</span>
                                 </a>
                             
                         </div>
@@ -1163,6 +1239,10 @@
                         <span class="chip bg-color">Java</span>
                     </a>
                     
+                    <a href="/tags/Error/">
+                        <span class="chip bg-color">Error</span>
+                    </a>
+                    
                     <a href="/tags/Configuration/">
                         <span class="chip bg-color">Configuration</span>
                     </a>
@@ -1171,12 +1251,16 @@
                         <span class="chip bg-color">LocalHost</span>
                     </a>
                     
-                    <a href="/tags/Intellij-IDEA-Configuration/">
-                        <span class="chip bg-color">Intellij IDEA Configuration</span>
+                    <a href="/tags/Intellij-IDEA/">
+                        <span class="chip bg-color">Intellij IDEA</span>
                     </a>
                     
                     <a href="/tags/Tomcat/">
                         <span class="chip bg-color">Tomcat</span>
+                    </a>
+                    
+                    <a href="/tags/Tomcat-Configuration/">
+                        <span class="chip bg-color">Tomcat Configuration</span>
                     </a>
                     
                 </div>
@@ -1406,7 +1490,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">1.9k</span>
+                        class="white-color">2.3k</span>
             
             
             

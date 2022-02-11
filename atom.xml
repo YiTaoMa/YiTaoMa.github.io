@@ -85,7 +85,7 @@
     <link href="http://yitaoma.github.io/2022/01/17/tomcatconfig/"/>
     <id>http://yitaoma.github.io/2022/01/17/tomcatconfig/</id>
     <published>2022-01-17T04:55:00.000Z</published>
-    <updated>2022-01-30T02:35:55.829Z</updated>
+    <updated>2022-02-11T05:14:25.603Z</updated>
     
     
       
@@ -103,13 +103,17 @@
     
     <category term="Java" scheme="http://yitaoma.github.io/tags/Java/"/>
     
+    <category term="Error" scheme="http://yitaoma.github.io/tags/Error/"/>
+    
     <category term="Configuration" scheme="http://yitaoma.github.io/tags/Configuration/"/>
     
     <category term="LocalHost" scheme="http://yitaoma.github.io/tags/LocalHost/"/>
     
-    <category term="Intellij IDEA Configuration" scheme="http://yitaoma.github.io/tags/Intellij-IDEA-Configuration/"/>
+    <category term="Intellij IDEA" scheme="http://yitaoma.github.io/tags/Intellij-IDEA/"/>
     
     <category term="Tomcat" scheme="http://yitaoma.github.io/tags/Tomcat/"/>
+    
+    <category term="Tomcat Configuration" scheme="http://yitaoma.github.io/tags/Tomcat-Configuration/"/>
     
   </entry>
   
