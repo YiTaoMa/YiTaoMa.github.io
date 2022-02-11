@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Buddha&#39;s code comments</title>
+      <link href="/2022/02/11/fozucomment/"/>
+      <url>/2022/02/11/fozucomment/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Buddha’s-code-comments"><a href="#Buddha’s-code-comments" class="headerlink" title="Buddha’s code comments"></a>Buddha’s code comments</h1><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//</span><span class="token comment">//                       _oo0oo_</span><span class="token comment">//                      o8888888o</span><span class="token comment">//                      88" . "88</span><span class="token comment">//                      (| -_- |)</span><span class="token comment">//                      0\  =  /0</span><span class="token comment">//                    ___/`---'\___</span><span class="token comment">//                  .' \\|     |// '.</span><span class="token comment">//                 / \\|||  :  |||// \</span><span class="token comment">//                / _||||| -:- |||||- \</span><span class="token comment">//               |   | \\\  -  /// |   |</span><span class="token comment">//               | \_|  ''\---/''  |_/ |</span><span class="token comment">//               \  .-\__  '-'  ___/-. /</span><span class="token comment">//             ___'. .'  /--.--\  `. .'___</span><span class="token comment">//          ."" '&lt;  `.___\_&lt;|&gt;_/___.' &gt;' "".</span><span class="token comment">//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |</span><span class="token comment">//         \  \ `_.   \_ __\ /__ _/   .-` /  /</span><span class="token comment">//     =====`-.____`.___ \_____/___.-`___.-'=====</span><span class="token comment">//                       `=---='</span><span class="token comment">//</span><span class="token comment">//</span><span class="token comment">//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span><span class="token comment">//</span><span class="token comment">//               佛祖保佑         永无BUG</span><span class="token comment">//</span><span class="token comment">//</span><span class="token comment">//</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Comment </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Comment </tag>
+            
+            <tag> Interesting stuff </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Local access to PHP files and databases</title>
       <link href="/2022/01/30/phplocalhost/"/>
       <url>/2022/01/30/phplocalhost/</url>

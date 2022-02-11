@@ -6,7 +6,7 @@
   <link href="http://yitaoma.github.io/atom.xml" rel="self"/>
   
   <link href="http://yitaoma.github.io/"/>
-  <updated>2022-01-30T04:27:58.848Z</updated>
+  <updated>2022-02-11T05:34:24.037Z</updated>
   <id>http://yitaoma.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Buddha&#39;s code comments</title>
+    <link href="http://yitaoma.github.io/2022/02/11/fozucomment/"/>
+    <id>http://yitaoma.github.io/2022/02/11/fozucomment/</id>
+    <published>2022-02-11T05:22:55.000Z</published>
+    <updated>2022-02-11T05:34:24.037Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Buddha’s-code-comments&quot;&gt;&lt;a href=&quot;#Buddha’s-code-comments&quot; class=&quot;headerlink&quot; title=&quot;Buddha’s code comments&quot;&gt;&lt;/a&gt;Buddha’s code</summary>
+        
+      
+    
+    
+    
+    <category term="Comment" scheme="http://yitaoma.github.io/categories/Comment/"/>
+    
+    
+    <category term="Java" scheme="http://yitaoma.github.io/tags/Java/"/>
+    
+    <category term="Comment" scheme="http://yitaoma.github.io/tags/Comment/"/>
+    
+    <category term="Interesting stuff" scheme="http://yitaoma.github.io/tags/Interesting-stuff/"/>
+    
+  </entry>
   
   <entry>
     <title>Local access to PHP files and databases</title>
