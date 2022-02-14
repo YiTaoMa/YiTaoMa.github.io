@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Some issues and considerations for importing SQL files to MySQL</title>
+      <link href="/2022/02/14/mysqlimportfilenotice/"/>
+      <url>/2022/02/14/mysqlimportfilenotice/</url>
+      
+        <content type="html"><![CDATA[<h1 id="English-version-steps"><a href="#English-version-steps" class="headerlink" title="English version steps"></a>English version steps</h1><hr><p><strong>When importing sql file to MySQL database:</strong></p><hr><p><strong>If after importing, you find that Table/Contents is not displayed:</strong></p><ol><li>Then first refresh the whole database/table.</li></ol><hr><ol start="2"><li>If it still doesn’t work, copy the contents of the sql file you imported, then create a new “Query Text Tab”, paste the copied contents and click “Query” (lightning symbol-⚡️), refresh the database, then you will see the contents you imported.</li></ol><hr><ul><li>Note: Here you add a “use” + “your schema/database name;” at the top of the sql file you import (usually under the comment at the beginning, in front of the first line of code), so you know which database to import to.</li></ul><hr><h1 id="中文版本步骤"><a href="#中文版本步骤" class="headerlink" title="中文版本步骤"></a>中文版本步骤</h1><hr><p><strong>当导入sql文件到MySQL数据库：</strong></p><hr><p><strong>如果导入后发现Table/内容没有显示：</strong></p><ol><li>那么首先刷新整个数据库/表。</li></ol><hr><ol start="2"><li>如果还是不行，拷贝你导入的sql文件的所有内容，然后新建一个“查询文本标签页”，粘贴复制的内容然后点击“查询”（闪电符号-⚡️），再刷新一下数据库即可成功。</li></ol><hr><ul><li>注意：这里在你导入的sql文件的最上面加一个 “use” +“你的schema/数据库名;“（通常在开头的注释下面，第一行代码的前面），这样就知道要导入到哪个数据库了。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+            <tag> SQlFile </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Buddha&#39;s code comments</title>
       <link href="/2022/02/11/fozucomment/"/>
       <url>/2022/02/11/fozucomment/</url>

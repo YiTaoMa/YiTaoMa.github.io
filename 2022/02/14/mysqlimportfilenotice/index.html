@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Buddha&#39;s code comments, null">
-    <meta name="description" content="Buddha&#39;s code comments to bless your peace.">
+    <meta name="keywords" content="Some issues and considerations for importing SQL files to MySQL, null">
+    <meta name="description" content="Solve Some issues and considerations for importing SQL files to MySQL">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Buddha&#39;s code comments | null</title>
+    <title>Some issues and considerations for importing SQL files to MySQL | null</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -259,12 +259,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/fozu.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/sqlFile.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Buddha&#39;s code comments</h1>
+                    <h1 class="description center-align post-title">Some issues and considerations for importing SQL files to MySQL</h1>
                 </div>
             </div>
         </div>
@@ -380,16 +380,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
                             </a>
                         
-                            <a href="/tags/Comment/">
-                                <span class="chip bg-color">Comment</span>
-                            </a>
-                        
-                            <a href="/tags/Interesting-stuff/">
-                                <span class="chip bg-color">Interesting stuff</span>
+                            <a href="/tags/SQlFile/">
+                                <span class="chip bg-color">SQlFile</span>
                             </a>
                         
                     </div>
@@ -400,8 +396,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Comment/" class="post-category">
-                                Comment
+                            <a href="/categories/MySQL/" class="post-category">
+                                MySQL
                             </a>
                         
                     </div>
@@ -413,21 +409,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-02-11
+                    2022-02-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-02-11
+                    2022-02-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    46
+                    276
                 </div>
                 
 
@@ -457,33 +453,38 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Buddha’s-code-comments"><a href="#Buddha’s-code-comments" class="headerlink" title="Buddha’s code comments"></a>Buddha’s code comments</h1><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//</span>
-<span class="token comment">//                       _oo0oo_</span>
-<span class="token comment">//                      o8888888o</span>
-<span class="token comment">//                      88" . "88</span>
-<span class="token comment">//                      (| -_- |)</span>
-<span class="token comment">//                      0\  =  /0</span>
-<span class="token comment">//                    ___/`---'\___</span>
-<span class="token comment">//                  .' \\|     |// '.</span>
-<span class="token comment">//                 / \\|||  :  |||// \</span>
-<span class="token comment">//                / _||||| -:- |||||- \</span>
-<span class="token comment">//               |   | \\\  -  /// |   |</span>
-<span class="token comment">//               | \_|  ''\---/''  |_/ |</span>
-<span class="token comment">//               \  .-\__  '-'  ___/-. /</span>
-<span class="token comment">//             ___'. .'  /--.--\  `. .'___</span>
-<span class="token comment">//          ."" '&lt;  `.___\_&lt;|&gt;_/___.' &gt;' "".</span>
-<span class="token comment">//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |</span>
-<span class="token comment">//         \  \ `_.   \_ __\ /__ _/   .-` /  /</span>
-<span class="token comment">//     =====`-.____`.___ \_____/___.-`___.-'=====</span>
-<span class="token comment">//                       `=---='</span>
-<span class="token comment">//</span>
-<span class="token comment">//</span>
-<span class="token comment">//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
-<span class="token comment">//</span>
-<span class="token comment">//               佛祖保佑         永无BUG</span>
-<span class="token comment">//</span>
-<span class="token comment">//</span>
-<span class="token comment">//</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="English-version-steps"><a href="#English-version-steps" class="headerlink" title="English version steps"></a>English version steps</h1><hr>
+<p><strong>When importing sql file to MySQL database:</strong></p>
+<hr>
+<p><strong>If after importing, you find that Table/Contents is not displayed:</strong></p>
+<ol>
+<li>Then first refresh the whole database/table.</li>
+</ol>
+<hr>
+<ol start="2">
+<li>If it still doesn’t work, copy the contents of the sql file you imported, then create a new “Query Text Tab”, paste the copied contents and click “Query” (lightning symbol-⚡️), refresh the database, then you will see the contents you imported.</li>
+</ol>
+<hr>
+<ul>
+<li>Note: Here you add a “use” + “your schema/database name;” at the top of the sql file you import (usually under the comment at the beginning, in front of the first line of code), so you know which database to import to.</li>
+</ul>
+<hr>
+<h1 id="中文版本步骤"><a href="#中文版本步骤" class="headerlink" title="中文版本步骤"></a>中文版本步骤</h1><hr>
+<p><strong>当导入sql文件到MySQL数据库：</strong></p>
+<hr>
+<p><strong>如果导入后发现Table/内容没有显示：</strong></p>
+<ol>
+<li>那么首先刷新整个数据库/表。</li>
+</ol>
+<hr>
+<ol start="2">
+<li>如果还是不行，拷贝你导入的sql文件的所有内容，然后新建一个“查询文本标签页”，粘贴复制的内容然后点击“查询”（闪电符号-⚡️），再刷新一下数据库即可成功。</li>
+</ol>
+<hr>
+<ul>
+<li>注意：这里在你导入的sql文件的最上面加一个 “use” +“你的schema/数据库名;“（通常在开头的注释下面，第一行代码的前面），这样就知道要导入到哪个数据库了。</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -509,7 +510,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://YiTaoMa.github.io/2022/02/11/fozucomment/">http://YiTaoMa.github.io/2022/02/11/fozucomment/</a>
+                    <a href="http://YiTaoMa.github.io/2022/02/14/mysqlimportfilenotice/">http://YiTaoMa.github.io/2022/02/14/mysqlimportfilenotice/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -547,16 +548,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
                                 </a>
                             
-                                <a href="/tags/Comment/">
-                                    <span class="chip bg-color">Comment</span>
-                                </a>
-                            
-                                <a href="/tags/Interesting-stuff/">
-                                    <span class="chip bg-color">Interesting stuff</span>
+                                <a href="/tags/SQlFile/">
+                                    <span class="chip bg-color">SQlFile</span>
                                 </a>
                             
                         </div>
@@ -997,9 +994,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/02/14/mysqlimportfilenotice/">
                     <div class="card-image">
@@ -1016,9 +1014,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1031,6 +1029,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1053,30 +1052,30 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/30/phplocalhost/">
+                <a href="/2022/02/11/fozucomment/">
                     <div class="card-image">
                         
-                        <img src="/images/phpConCover.jpg" class="responsive-img" alt="Local access to PHP files and databases">
+                        <img src="/images/fozu.jpg" class="responsive-img" alt="Buddha&#39;s code comments">
                         
-                        <span class="card-title">Local access to PHP files and databases</span>
+                        <span class="card-title">Buddha&#39;s code comments</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            With MAMP on macOS, set up a local server to access PHP files and phpMyAdmin database
+                            Buddha's code comments to bless your peace.
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-30
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/PHP/" class="post-category">
-                                    PHP
+                            <a href="/categories/Comment/" class="post-category">
+                                    Comment
                                 </a>
                             
                             
@@ -1086,28 +1085,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/MySQL/">
-                        <span class="chip bg-color">MySQL</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
                     </a>
                     
-                    <a href="/tags/PHP/">
-                        <span class="chip bg-color">PHP</span>
+                    <a href="/tags/Comment/">
+                        <span class="chip bg-color">Comment</span>
                     </a>
                     
-                    <a href="/tags/phpMyAdmin/">
-                        <span class="chip bg-color">phpMyAdmin</span>
-                    </a>
-                    
-                    <a href="/tags/Configuration/">
-                        <span class="chip bg-color">Configuration</span>
-                    </a>
-                    
-                    <a href="/tags/LocalHost/">
-                        <span class="chip bg-color">LocalHost</span>
-                    </a>
-                    
-                    <a href="/tags/PHP-LocalHost-Configuration/">
-                        <span class="chip bg-color">PHP LocalHost Configuration</span>
+                    <a href="/tags/Interesting-stuff/">
+                        <span class="chip bg-color">Interesting stuff</span>
                     </a>
                     
                 </div>
