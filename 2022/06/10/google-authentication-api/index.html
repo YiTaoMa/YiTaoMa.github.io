@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Some issues and considerations for importing SQL files to MySQL, null">
-    <meta name="description" content="Solve Some issues and considerations for importing SQL files to MySQL">
+    <meta name="keywords" content="Google-Authentication-API, null">
+    <meta name="description" content="By read this article you will know how to implement Google Authentication API (PHP version)">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Some issues and considerations for importing SQL files to MySQL | null</title>
+    <title>Google-Authentication-API | null</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -259,12 +259,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/sqlFile.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/googleAPI.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Some issues and considerations for importing SQL files to MySQL</h1>
+                    <h1 class="description center-align post-title">Google-Authentication-API</h1>
                 </div>
             </div>
         </div>
@@ -380,12 +380,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/MySQL/">
-                                <span class="chip bg-color">MySQL</span>
+                            <a href="/tags/API/">
+                                <span class="chip bg-color">API</span>
                             </a>
                         
-                            <a href="/tags/SQlFile/">
-                                <span class="chip bg-color">SQlFile</span>
+                            <a href="/tags/Google-Authentication-API/">
+                                <span class="chip bg-color">Google Authentication API</span>
+                            </a>
+                        
+                            <a href="/tags/PHP/">
+                                <span class="chip bg-color">PHP</span>
                             </a>
                         
                     </div>
@@ -396,8 +400,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/MySQL/" class="post-category">
-                                MySQL
+                            <a href="/categories/Google-Authentication-API/" class="post-category">
+                                Google Authentication API
                             </a>
                         
                     </div>
@@ -409,28 +413,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-02-14
+                    2022-06-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-02-14
+                    2022-06-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    276
+                    889
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    5 Min
                 </div>
                 
 
@@ -453,37 +457,75 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="English-version-steps"><a href="#English-version-steps" class="headerlink" title="English version steps"></a>English version steps</h1><hr>
-<p><strong>When importing sql file to MySQL database:</strong></p>
-<hr>
-<p><strong>If after importing, you find that Table/Contents is not displayed:</strong></p>
-<ol>
-<li>Then first refresh the whole database/table.</li>
+                <h1 id="English-version-steps"><a href="#English-version-steps" class="headerlink" title="English version steps"></a>English version steps</h1><ol>
+<li>First click on the video link below and follow this video to configure what you need on Google Cloud Console. You can stop watching at 5:31. Video link: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=xH6hAW3EqLk">https://www.youtube.com/watch?v=xH6hAW3EqLk</a></li>
 </ol>
 <hr>
 <ol start="2">
-<li>If it still doesn’t work, copy the contents of the sql file you imported, then create a new “Query Text Tab”, paste the copied contents and click “Query” (lightning symbol-⚡️), refresh the database, then you will see the contents you imported.</li>
+<li>PHP implementation requires downloading a google-api-php-client. click on this link below to download. Where my version is PHP 7.4, you can also choose other versions. Link: <a target="_blank" rel="noopener" href="https://github.com/googleapis/google-api-php-client/releases">https://github.com/googleapis/google-api-php-client/releases</a></li>
 </ol>
 <hr>
-<ul>
-<li>Note: Here you add a “use” + “your schema/database name;” at the top of the sql file you import (usually under the comment at the beginning, in front of the first line of code), so you know which database to import to.</li>
-</ul>
+<ol start="3">
+<li>After downloading and unzipping, put the whole folder into your project root directory. Your project needs a folder called google-api-php-client–PHP7.4 (7.4 is the version) </li>
+</ol>
 <hr>
-<h1 id="中文版本步骤"><a href="#中文版本步骤" class="headerlink" title="中文版本步骤"></a>中文版本步骤</h1><hr>
-<p><strong>当导入sql文件到MySQL数据库：</strong></p>
+<ol start="4">
+<li>Then, you can start doing it. You can follow this PHP code at the <strong>code section</strong> at the end of this article to implement an example of a user logging in with a Google account and adjust it yourself to fit your needs.</li>
+</ol>
 <hr>
-<p><strong>如果导入后发现Table/内容没有显示：</strong></p>
-<ol>
-<li>那么首先刷新整个数据库/表。</li>
+<h1 id="中文步骤"><a href="#中文步骤" class="headerlink" title="中文步骤"></a>中文步骤</h1><ol>
+<li>首先点击以下视频链接，跟着这个视频在Google Cloud Console上配置好所需的东西。你可以在第5:31停止观看。视频链接：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=xH6hAW3EqLk">https://www.youtube.com/watch?v=xH6hAW3EqLk</a></li>
 </ol>
 <hr>
 <ol start="2">
-<li>如果还是不行，拷贝你导入的sql文件的所有内容，然后新建一个“查询文本标签页”，粘贴复制的内容然后点击“查询”（闪电符号-⚡️），再刷新一下数据库即可成功。</li>
+<li>PHP实现需要下载一个google-api-php-client。点击以下这个链接进行下载。其中我的版本是PHP7.4，你也可以选择其它版本。链接：<a target="_blank" rel="noopener" href="https://github.com/googleapis/google-api-php-client/releases">https://github.com/googleapis/google-api-php-client/releases</a></li>
 </ol>
 <hr>
-<ul>
-<li>注意：这里在你导入的sql文件的最上面加一个 “use” +“你的schema/数据库名;“（通常在开头的注释下面，第一行代码的前面），这样就知道要导入到哪个数据库了。</li>
-</ul>
+<ol start="3">
+<li>下载完解压缩后，把整个文件夹放到你的项目根目录里。你的项目里需要有个文件夹叫google-api-php-client–PHP7.4 （7.4为版本）</li>
+</ol>
+<hr>
+<ol start="4">
+<li>然后，就可以开始做了。可以根据在文章最后的<strong>Code部分</strong>的PHP代码实现用户用Google账户登录的例子，自行调整以符合自己的需求。</li>
+</ol>
+<hr>
+<h1 id="Code-Section-PHP代码部分"><a href="#Code-Section-PHP代码部分" class="headerlink" title="Code Section (PHP代码部分)"></a>Code Section (PHP代码部分)</h1><pre class="line-numbers language-php" data-language="php"><code class="language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token comment">// You can put this code in a file and use require_once "this file name.php"; at the start of your login.php</span>
+<span class="token function">session_start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// you can delete it based on your need</span>
+<span class="token keyword">require_once</span> <span class="token string single-quoted-string">'google-api-php-client--PHP7.4/vendor/autoload.php'</span><span class="token punctuation">;</span> <span class="token comment">// invoke the php client you downloaded at the step 2 and 3 (make sure the whole php client folder is at the root of the project in this case)</span>
+<span class="token variable">$loginButton</span> <span class="token operator">=</span> <span class="token string single-quoted-string">''</span><span class="token punctuation">;</span> <span class="token comment">// you can ignore this</span>
+<span class="token variable">$gClient</span> <span class="token operator">=</span>  <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">Google<span class="token punctuation">\</span>Client</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// initialize</span>
+<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">setClientId</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Your Client ID'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// This must be the same as the one in your google cloud console</span>
+<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">setClientSecret</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Your Client Secret'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// This must be the same as the one in your google cloud console</span>
+<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">setApplicationName</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"Your app name"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// This is also from your google console and must be the same as the one in your google cloud console</span>
+<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">setRedirectUri</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'http://assignmentmanagerxxxxx.xxxxxxx.xxxxxx.elasticbeanstalk.com/login.php'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// the redirect url must be the same as your google cloud console! AND you may not set up an redirect url from step 1 so you need to go to your console and set up ONLY 1 redirect URL and that URL must MATCH to this one in the code here. (redirect URl is where/which page would you like to go after the user login with their google account. in this case i redirect the user to my login page. you may adjust this to match your need)</span>
+<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">setAccessType</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'offline'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">setApprovalPrompt</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'force'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">addScope</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'profile'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">addScope</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'email'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">isset</span><span class="token punctuation">(</span><span class="token variable">$_GET</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'code'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//receive user information, if is set means the user is login with google. (after the user login with their google account, since this file is at the top of the login page and the redirect url is going to redirect to the login page after the user login with their google account, so it will detect the user is logged in with their google account)</span>
+	<span class="token variable">$token</span> <span class="token operator">=</span> <span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">fetchAccessTokenWithAuthCode</span><span class="token punctuation">(</span><span class="token variable">$_GET</span><span class="token punctuation">[</span><span class="token string single-quoted-string">'code'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token variable">$_SESSION</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"access_token"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$token</span><span class="token punctuation">;</span> <span class="token comment">// if you doing session make sure to unset all when you do logout. You also need to do "$gClient-&gt;revokeToken();" in your logout page to make it secure</span>
+	<span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">setAccessToken</span><span class="token punctuation">(</span><span class="token variable">$token</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//this may give http 500 error because the client id and secret key is not match with your google cloud console!</span>
+	<span class="token variable">$oAuth</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">Google<span class="token punctuation">\</span>Service<span class="token punctuation">\</span>Oauth2</span><span class="token punctuation">(</span><span class="token variable">$gClient</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token variable">$userData</span> <span class="token operator">=</span> <span class="token variable">$oAuth</span><span class="token operator">-&gt;</span><span class="token property">userinfo</span><span class="token operator">-&gt;</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// get user data</span>
+    <span class="token comment">// below just put their name id email to the session.</span>
+	<span class="token variable">$_SESSION</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"currentUserId"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$userData</span><span class="token operator">-&gt;</span><span class="token property">id</span><span class="token punctuation">;</span>
+	<span class="token variable">$_SESSION</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"currentUserEmail"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$userData</span><span class="token operator">-&gt;</span><span class="token property">email</span><span class="token punctuation">;</span>
+	<span class="token variable">$_SESSION</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"user_name"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$userData</span><span class="token operator">-&gt;</span><span class="token property">givenName</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// you can adjust it or delete it based on your need</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">isset</span><span class="token punctuation">(</span><span class="token variable">$_SESSION</span><span class="token punctuation">[</span><span class="token string double-quoted-string">"currentUserId"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// if id set means user logged in successfully, then redirect them to the page</span>
+		<span class="token function">header</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'Location:manager.php'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">exit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token comment">// Here is also important!</span>
+    <span class="token comment">// when the user click login with google button, it should create a auth url and let the user to choose a google account ot login.</span>
+    <span class="token comment">// you can adjust it but this $gClient-&gt;createAuthUrl() is crucial.</span>
+	<span class="token variable">$loginButton</span> <span class="token operator">=</span> <span class="token string single-quoted-string">'&lt;a class="googleLogin" href="'</span> <span class="token operator">.</span> <span class="token variable">$gClient</span><span class="token operator">-&gt;</span><span class="token function">createAuthUrl</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">.</span> <span class="token string single-quoted-string">'"&gt;Login with Google&lt;/a&gt;'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token delimiter important">?&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -510,7 +552,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://YiTaoMa.github.io/2022/02/14/mysqlimportfilenotice/">http://YiTaoMa.github.io/2022/02/14/mysqlimportfilenotice/</a>
+                    <a href="http://YiTaoMa.github.io/2022/06/10/google-authentication-api/">http://YiTaoMa.github.io/2022/06/10/google-authentication-api/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,12 +590,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/MySQL/">
-                                    <span class="chip bg-color">MySQL</span>
+                                <a href="/tags/API/">
+                                    <span class="chip bg-color">API</span>
                                 </a>
                             
-                                <a href="/tags/SQlFile/">
-                                    <span class="chip bg-color">SQlFile</span>
+                                <a href="/tags/Google-Authentication-API/">
+                                    <span class="chip bg-color">Google Authentication API</span>
+                                </a>
+                            
+                                <a href="/tags/PHP/">
+                                    <span class="chip bg-color">PHP</span>
                                 </a>
                             
                         </div>
@@ -994,9 +1040,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/06/10/google-authentication-api/">
                     <div class="card-image">
@@ -1013,9 +1060,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1028,6 +1075,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1054,30 +1102,30 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/02/11/fozucomment/">
+                <a href="/2022/02/14/mysqlimportfilenotice/">
                     <div class="card-image">
                         
-                        <img src="/images/fozu.jpg" class="responsive-img" alt="Buddha&#39;s code comments">
+                        <img src="/images/sqlFile.jpg" class="responsive-img" alt="Some issues and considerations for importing SQL files to MySQL">
                         
-                        <span class="card-title">Buddha&#39;s code comments</span>
+                        <span class="card-title">Some issues and considerations for importing SQL files to MySQL</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Buddha's code comments to bless your peace.
+                            Solve Some issues and considerations for importing SQL files to MySQL
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Comment/" class="post-category">
-                                    Comment
+                            <a href="/categories/MySQL/" class="post-category">
+                                    MySQL
                                 </a>
                             
                             
@@ -1087,16 +1135,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
+                    <a href="/tags/MySQL/">
+                        <span class="chip bg-color">MySQL</span>
                     </a>
                     
-                    <a href="/tags/Comment/">
-                        <span class="chip bg-color">Comment</span>
-                    </a>
-                    
-                    <a href="/tags/Interesting-stuff/">
-                        <span class="chip bg-color">Interesting stuff</span>
+                    <a href="/tags/SQlFile/">
+                        <span class="chip bg-color">SQlFile</span>
                     </a>
                     
                 </div>
