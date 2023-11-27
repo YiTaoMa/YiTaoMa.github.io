@@ -256,6 +256,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('Please enter the password to access this post')).toString(CryptoJS.enc.Hex)) {
+                alert('Incorrect password, will return to the main page!');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -1507,15 +1520,18 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/YiTaoMa" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/YiTaoMa" class="tooltipped" target="_blank" data-tooltip="Visit my GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:antigeneralma@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:antigeneralma@gmail.com" class="tooltipped" target="_blank" data-tooltip="Contact me by e-mail" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
+
+
+
 
 
 
