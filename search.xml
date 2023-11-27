@@ -109,11 +109,11 @@
             
             <tag> MySQL </tag>
             
-            <tag> phpMyAdmin </tag>
-            
             <tag> Configuration </tag>
             
             <tag> LocalHost </tag>
+            
+            <tag> phpMyAdmin </tag>
             
             <tag> PHP LocalHost Configuration </tag>
             
@@ -173,13 +173,13 @@
             
             <tag> Error </tag>
             
-            <tag> Configuration </tag>
-            
-            <tag> LocalHost </tag>
-            
             <tag> Intellij IDEA </tag>
             
             <tag> Tomcat </tag>
+            
+            <tag> Configuration </tag>
+            
+            <tag> LocalHost </tag>
             
             <tag> Tomcat Configuration </tag>
             
