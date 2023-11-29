@@ -126,11 +126,11 @@
     
     <category term="MySQL" scheme="http://yitaoma.github.io/tags/MySQL/"/>
     
+    <category term="phpMyAdmin" scheme="http://yitaoma.github.io/tags/phpMyAdmin/"/>
+    
     <category term="Configuration" scheme="http://yitaoma.github.io/tags/Configuration/"/>
     
     <category term="LocalHost" scheme="http://yitaoma.github.io/tags/LocalHost/"/>
-    
-    <category term="phpMyAdmin" scheme="http://yitaoma.github.io/tags/phpMyAdmin/"/>
     
     <category term="PHP LocalHost Configuration" scheme="http://yitaoma.github.io/tags/PHP-LocalHost-Configuration/"/>
     
@@ -190,13 +190,13 @@
     
     <category term="Error" scheme="http://yitaoma.github.io/tags/Error/"/>
     
-    <category term="Intellij IDEA" scheme="http://yitaoma.github.io/tags/Intellij-IDEA/"/>
-    
-    <category term="Tomcat" scheme="http://yitaoma.github.io/tags/Tomcat/"/>
-    
     <category term="Configuration" scheme="http://yitaoma.github.io/tags/Configuration/"/>
     
     <category term="LocalHost" scheme="http://yitaoma.github.io/tags/LocalHost/"/>
+    
+    <category term="Intellij IDEA" scheme="http://yitaoma.github.io/tags/Intellij-IDEA/"/>
+    
+    <category term="Tomcat" scheme="http://yitaoma.github.io/tags/Tomcat/"/>
     
     <category term="Tomcat Configuration" scheme="http://yitaoma.github.io/tags/Tomcat-Configuration/"/>
     
