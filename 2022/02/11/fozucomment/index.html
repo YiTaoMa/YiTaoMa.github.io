@@ -261,8 +261,8 @@
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('Please enter the password to access this post')).toString(CryptoJS.enc.Hex)) {
-                alert('Incorrect password, will return to the main page!');
+            if (pwd !== CryptoJS.SHA256(prompt('🗝️Riddle "XvznvmXdkczm 21" 👉Please enter the answer to the riddle to access this post')).toString(CryptoJS.enc.Hex)) {
+                alert('❌Incorrect password❌, will return to the main page!');
                 location.href = '/';
             }
         }

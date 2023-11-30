@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Video Block</title>
+      <link href="/2023/11/30/videoblock/"/>
+      <url>/2023/11/30/videoblock/</url>
+      
+        <content type="html"><![CDATA[<h1 style="text-align: center;">AWS Assignments Manager Project Demo</h1><p style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/k9sTUZUoBas?si=jq9jfCv9syulnlnX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p><h1 style="text-align: center;">Ethical Hacking</h1><p style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/YvxhUPOLLWc?si=csHD-Yu7yBrcnAi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Videos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Videos </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Google Authentication API</title>
       <link href="/2022/06/10/google-authentication-api/"/>
       <url>/2022/06/10/google-authentication-api/</url>
