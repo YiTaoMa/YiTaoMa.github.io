@@ -445,7 +445,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2022-01-30
+                    2023-12-05
                 </div>
                 
 
@@ -523,7 +523,7 @@
 <li>Enter the following command in the terminal.<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">/Applications/MAMP/Library/bin/mysqladmin -u root -p password<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 <li>Follow the prompts and enter the original password, then the new password, and finally confirm the new password to succeed. The following warning may appear, but it will not affect the password change.<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Warning: Since password will be sent to server <span class="token keyword">in</span> plain text, use ssl connection to ensure password safety.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <img src="mysqlPassW.png"></li>
-<li>Go to the MAMP configuration file and change the MySQL password by opening /Applications/MAMP/bin/phpMyAdmin/config.inc.php<br>Find line 87 or so and change it to the password you just changed.<br><img src="phpAdminConfAct.png"></li>
+<li>Go to the MAMP configuration file and change the MySQL password by opening<br>/Applications/MAMP/bin/phpMyAdmin/config.inc.php<br>Find line 87 or so and change it to the password you just changed.<br><img src="phpAdminConfAct.png"></li>
 <li>After these two steps, you have correctly changed the mysql password for MAMP, the integrated PHP environment for Mac.</li>
 <li>Restart the server, and you should see that phpMyAdmin is successfully connected when you enter the WebStart page, click it to enter.</li>
 </ol>
@@ -564,7 +564,7 @@
 </ol>
 <ul>
 <li>如果说连接失败则进行如下检查：<ol>
-<li>去到/Applications/MAMP/bin/phpMyAdmin/config.inc.php地址检查配置文件中的端口，用户名，密码是否和你MAMP配置的相同，其中要注意的是 如果之前没有配置过MySQl密码那么默认的是：用户名：root，密码：root。建议更改成你自己的密码。<br><img src="phpAdminConf.png"></li>
+<li>去到<br>/Applications/MAMP/bin/phpMyAdmin/config.inc.php<br>地址检查配置文件中的端口，用户名，密码是否和你MAMP配置的相同，其中要注意的是 如果之前没有配置过MySQl密码那么默认的是：用户名：root，密码：root。建议更改成你自己的密码。<br><img src="phpAdminConf.png"></li>
 </ol>
 </li>
 </ul>
