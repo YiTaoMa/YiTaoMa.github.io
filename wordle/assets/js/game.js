@@ -305,11 +305,11 @@ function startMenu(){
 	addLogo();
 	let menu = document.createElement('div');
 	menu.id = 'menu';
-	for(i = 0; i < 6; i++){
+	for(i = 0; i < 7; i++){
 		let j = i;
 		let menuBtn = document.createElement('button');
 		menuBtn.className = 'menuBtn';
-		menuBtn.innerText = (i == 0)? maxBlock + ' letters' : ((i == 1)? level : ((i == 2)? difficulty : ((i == 3)? 'high scores' : ((i == 4)? 'help' : 'start game'))));
+		menuBtn.innerText = (i == 0)? maxBlock + ' letters' : ((i == 1)? level : ((i == 2)? difficulty : ((i == 3)? 'high scores' : ((i == 4)? 'help' : ((i == 5) ? 'start game' : 'Exit')))));
 		menuBtn.j = i;
 
 		menuBtn.addEventListener("click", menuClick);
@@ -482,9 +482,14 @@ function menuClick(event) {
 	let modalType = (j == 0)? 'charSelect' : ((j == 1)? 'levelSelect' : ((j == 2)? 'difficultySelect' : ((j == 3)? 'highScores' : 'help')));
 	if(j < 5){
 		openModal(modalType);
-	}else{
-		gameOn = 1;
-		gameStart();
+	}
+	else if (j === 5) {
+        // "start game" button clicked
+        gameOn = 1;
+        gameStart();
+    }else{
+		// "Exit" button clicked
+		window.location.href = 'https://yitaoma.github.io/';
 	}
 }
 
