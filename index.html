@@ -664,6 +664,10 @@
                     </div>
 <!-- end https://rss.bloople.net/ code -->
 
+                    <!-- Below style must be placed after the news API script, so after the "powered by..." loaded, we manually make it disappear by target the specific <div> with specific style. Note: if you inspect the code live you can see the script generated: "<div style="text-align: end;"><a href="https://rss.bloople.net/" target="_blank" style="color: #000000;">Powered by RSS 2 HTML</a></div>". BUT note: here I made sure that only 1 <div> with style text-align: end, so we target this will not affect other style. BUT if in the future, the author of this API change the style, then this will not work. --> 
+
+                    <style> div[style="text-align: end;"] {display: none;}</style>
+
                     <!-- news API widget end -->
 
                     
