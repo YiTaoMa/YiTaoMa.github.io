@@ -6,7 +6,7 @@
   <link href="https://yitaoma.github.io/atom.xml" rel="self"/>
   
   <link href="https://yitaoma.github.io/"/>
-  <updated>2024-08-03T13:39:19.376Z</updated>
+  <updated>2024-11-26T05:06:24.471Z</updated>
   <id>https://yitaoma.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ELK setup</title>
+    <link href="https://yitaoma.github.io/2024/11/26/elksetup/"/>
+    <id>https://yitaoma.github.io/2024/11/26/elksetup/</id>
+    <published>2024-11-26T03:32:24.000Z</published>
+    <updated>2024-11-26T05:06:24.471Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Install-Docker&quot;&gt;&lt;a href=&quot;#Install-Docker&quot; class=&quot;headerlink&quot; title=&quot;Install Docker&quot;&gt;&lt;/a&gt;Install Docker&lt;/h3&gt;&lt;p&gt;Installing ELK</summary>
+        
+      
+    
+    
+    
+    <category term="ELK" scheme="https://yitaoma.github.io/categories/ELK/"/>
+    
+    
+    <category term="ELK" scheme="https://yitaoma.github.io/tags/ELK/"/>
+    
+    <category term="Elasticsearch" scheme="https://yitaoma.github.io/tags/Elasticsearch/"/>
+    
+    <category term="Logstash" scheme="https://yitaoma.github.io/tags/Logstash/"/>
+    
+    <category term="Kibana" scheme="https://yitaoma.github.io/tags/Kibana/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Video Block</title>
     <link href="https://yitaoma.github.io/2023/11/30/videoblock/"/>
     <id>https://yitaoma.github.io/2023/11/30/videoblock/</id>
     <published>2023-11-30T03:43:26.000Z</published>
-    <updated>2024-08-03T13:39:19.376Z</updated>
+    <updated>2024-11-26T03:34:06.386Z</updated>
     
     
       
@@ -133,7 +164,7 @@
     <link href="https://yitaoma.github.io/2022/01/30/phplocalhost/"/>
     <id>https://yitaoma.github.io/2022/01/30/phplocalhost/</id>
     <published>2022-01-30T02:30:17.000Z</published>
-    <updated>2023-12-05T06:15:39.833Z</updated>
+    <updated>2024-11-26T03:48:46.083Z</updated>
     
     
       

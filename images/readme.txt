@@ -1,0 +1,1 @@
+For images, in the markdown, img attribute's image is for both small card image and cover image, you can also set a different cover image by specifies the image in coverImg attribute.
