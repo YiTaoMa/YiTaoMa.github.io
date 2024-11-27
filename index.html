@@ -665,7 +665,136 @@
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            https://ejmyt.itch.io/i-wanna-be-the-one
+            <!-- this is the original code which displays the dream as plain text-->
+            <!-- https://ejmyt.itch.io/i-wanna-be-the-one -->
+
+            <!-- Below is modified code which display dream as link -->
+            
+<!-- the style from https://www.sliderrevolution.com/resources/css-link-styles/ -->   
+         
+            <style>
+
+/*Note I adjusted the original div css, remove width and height and reduced the font size as well as removed html and body css in the original css code.*/
+
+.divEJ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.linkEJ {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  line-height: 1em;
+  margin: 0;
+  
+}
+
+.linkEJ--top {
+  position: absolute;
+  color: blue;
+  top: 0;
+  display: inline-block;
+  clip-path: polygon(0% 66%, 0% 0%, 100% 0%, 100% 40%);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.25s, color 0.5s ease 0.22s;
+}
+
+.linkEJ--top:after {
+  content: "";
+  position: absolute;
+  
+  top: 36%;
+  left: 0;
+  width: 100%;
+  height: 4%;
+  background: red;
+  transform: rotateZ(-2.2deg) scaleX(0%);
+  transform-origin: right top;
+  transition: transform 0.2s ease 0.22s;
+}
+
+.linkEJ--bottom {
+  display: inline-block;
+  clip-path: polygon(0% 65%, 100% 40%, 100% 110%, 0% 110%);
+  text-decoration: underline;
+  color: blue;
+  transition: color 0.5s ease 0.22s, background-position 0.2s ease 0.22s;
+  text-decoration: none;
+  background-size: 200% 8%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, red 50%, transparent 50%);
+  
+}
+
+/*Can't use this type of underscore for multiple lines of text :( 
+Good for menu buttons though, this would use a transform animation instead of a background position animation, better performance :)
+.link--bottom:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8%;
+  background: red;
+  transform-origin: left bottom;
+  transition: transform 0.2s ease;
+}
+
+.link:hover .link--bottom:before {
+  transform: scaleX(0%);
+}
+*/
+
+.linkEJ--bottom:after {
+  content: "";
+  position: absolute;
+  
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 4%;
+  background: red;
+  transform: rotateZ(-2deg) scaleX(0%);
+  transform-origin: right top;
+  transition: transform 0.2s ease 0.22s;
+}
+
+.linkEJ:hover .linkEJ--top {
+  color: red;
+  transform: translateY(-0.5em) rotateZ(-3deg);
+  transition: transform 0.5s cubic-bezier(.12,.8,.57,1.00) 0.42s, color 0.5s ease 0.22s;
+}
+
+.linkEJ:hover .linkEJ--bottom {
+  color: red;
+  background-position: 100% bottom;
+  transition: color 0.5s ease 0.2s, background-position 0.2s ease;
+}
+
+.linkEJ:hover .linkEJ--top:after {
+  top: 62%;
+  transform-origin: left top;
+  transform: rotateZ(-2.2deg) scaleX(100%);
+}
+
+.linkEJ:hover .linkEJ--bottom:after {
+  top: 65%;
+  transform-origin: left top;
+  transform: rotateZ(-2.1deg) scaleX(100%);
+}
+            </style>
+
+              <div class="divEJ">
+              <a class="linkEJ" rel="noreferrer noopener" target="_blank" href="https://ejmyt.itch.io/i-wanna-be-the-one">
+                <span class="linkEJ--top">I Wanna Be The One</span>
+                <span class="linkEJ--bottom">I Wanna Be The One</span>
+              </a>
+              </div>
+          
+<!-- -->
         </div>
     </div>
 </div>
